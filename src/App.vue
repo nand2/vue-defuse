@@ -68,11 +68,6 @@
 </script>
 
 <style lang="scss">
-  body {
-    background-color: #205060;
-    margin: 0;
-    padding: 0;
-  }
   #defuse {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

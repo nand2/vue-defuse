@@ -26,8 +26,8 @@
             :title="message('gamestate.newGame')">{{ winLoseSymbol }}</span>
       <span class="timer">⌛ {{ timePassed | formatTimer }}</span>
       <ul class="stats">
-        <li class="actions"><span class="label">{{ message('stats.actions') }}:</span> <span class="value"> {{ actions }}</span></li>
-        <li class="apm"><span class="label">{{ message('stats.apm') }}:</span> <span class="value"> {{ apm }}</span></li>
+        <li class="actions"><span class="dlabel">{{ message('stats.actions') }}:</span> <span class="value"> {{ actions }}</span></li>
+        <li class="apm"><span class="dlabel">{{ message('stats.apm') }}:</span> <span class="value"> {{ apm }}</span></li>
       </ul>
     </div>
     <div class="playfield"
@@ -39,7 +39,7 @@
               'defuse-instructions': showInstructions }">
 
       <!-- playfield creation -->
-      <div class="row"
+      <div class="drow"
            v-for="row, index in map">
         <m-field
           v-for="field in row"
@@ -701,7 +701,7 @@ export default {
     }
   }
 
-  .row {
+  .drow {
     display: flex;
     &:last-child .field {
       margin-bottom: 0;
@@ -752,11 +752,11 @@ export default {
       font-size: 0;
       font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
       .value,
-      .label {
+      .dlabel {
         font-size: 10px;
         display: inline-block;
       }
-      .label {
+      .dlabel {
         width: 80%;
       }
       .value {
