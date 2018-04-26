@@ -26,7 +26,7 @@
         fieldWidth: 60,
         numberOfBombs: 10,
         serverRecords: null,
-        storesRecordsOnServer: false,
+        storesRecordsOnServer: true,
         recordsStoreUrl: {
           base: 'https://connexo.de/defuse/defuse-api',
           get: 'https://connexo.de/defuse/defuse-api/get.php',

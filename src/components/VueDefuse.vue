@@ -57,7 +57,7 @@
           <h3>{{ message(`gamestate.${gamestate}`, [ timePassed ]) }}</h3>
           <p v-if="newLocalRecord" class="new-record">{{ newLocalRecord }}</p>
           <h4>{{ winLoseSymbol }}</h4>
-          <button type="button" @click="buildMap">{{ message('gamestate.retry') }}</button>
+          <button type="button" @click="buildMap" class="btn btn-primary">{{ message('gamestate.retry') }}</button>
         </div>
       </div>
 
@@ -654,6 +654,9 @@ export default {
     display: inline-block;
     padding: 0 .3em .3em;
     position: relative;
+    button, input, optgroup, select, textarea {
+      color: black;
+    }
   }
 
   .game-title {
@@ -815,7 +818,6 @@ export default {
         }
         button {
           appearance: none;
-          background-color: #fff;
           padding: .5em 2em;
         }
         .new-record {
