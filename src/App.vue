@@ -52,7 +52,7 @@
       storeResultToServer (payload) {
         axios.post(this.recordsStoreUrl.set, payload)
           .then(response => {
-            // this.playerName = '__user__'
+            this.getServerRecords()
           })
           .catch(function (error) {
             console.error(error)
