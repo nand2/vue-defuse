@@ -28,9 +28,9 @@
         serverRecords: null,
         storesRecordsOnServer: true,
         recordsStoreUrl: {
-          base: 'https://connexo.de/defuse/defuse-api',
-          get: 'https://connexo.de/defuse/defuse-api/get.php',
-          set: 'https://connexo.de/defuse/defuse-api/set.php'
+          base: 'https://www.ordissinaute.fr/',
+          get: 'https://www.ordissinaute.fr/ordissinaute_game_minesweeper_stats',
+          set: 'https://www.ordissinaute.fr/ordissinaute_game_minesweeper_stats'
         },
       }
     },
