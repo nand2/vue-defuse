@@ -183,7 +183,7 @@ const localRecords = JSON.parse(localStorage.getItem('defuse-records')) || JSON.
 const Field = require('./MField.js')
 
 // get default language from either localStorage or from the browser
-var userLang = localStorage.getItem('defuse-language') || navigator.language || navigator.userLanguage
+var userLang = localStorage.getItem('defuse-language') || navigator.language.substr(0, 2) || navigator.userLanguage
 
 // make sure the language is supported, fall back to 'en' otherwise
 if (Object.keys(messages).indexOf(userLang) === -1) {
